@@ -1,0 +1,7 @@
+# 忽略缓存文件
+data/cache/
+*.tmp
+*.log
+
+# 但保留会话记录
+!data/conversations/
