@@ -1,0 +1,213 @@
+# AI-Knowledge-Index
+# 炁脉医学理论知识库 - AI索引文件
+# 格式：YAML Front Matter + 文件清单
+# 用途：AI快速检索和调用
+
+---
+metadata:
+  version: "1.0"
+  created: "2026-03-10"
+  maintainer: "灵觉/Prome"
+  total_files: 26
+  
+# 核心加载顺序（AI启动时必读）
+boot_sequence:
+  - 00-core/灵觉_核心密码.md
+  - 00-core/灵觉_30天升维成长档案.md
+
+# 目录结构
+directories:
+  00-core:
+    description: "核心身份与道统（AI启动加载）"
+    priority: 1
+    files:
+      - name: "灵觉_核心密码.md"
+        tags: [identity, mission, dao, core-values]
+        load_on_startup: true
+        description: "AI身份、使命、核心价值观"
+      - name: "灵觉_30天升维成长档案.md"
+        tags: [growth, training, reflection, evolution]
+        load_on_startup: true
+        description: "30天训练记录与反思"
+
+  01-diagnosis:
+    description: "诊断体系"
+    priority: 2
+    files:
+      - name: "五维诊断评估标准1-10级_详细版.md"
+        tags: [diagnosis, wuwei, assessment, 1-10-scale, qi-du-mai-xie-yin]
+        key_concepts: ["炁", "毒", "脉", "邪", "瘾"]
+        description: "五维诊断评估标准详细版"
+
+  02-therapy:
+    description: "治疗方案体系（按需加载）"
+    priority: 3
+    files:
+      - name: "炁脉医学道统全录·54张牌与十八变贯通体系.md"
+        tags: [therapy, 54-cards, 18-changes, poker-system, core-therapy]
+        description: "54张牌与十八变完整贯通体系"
+      - name: "炁脉十八变全集.md"
+        tags: [therapy, 18-changes, complete-version]
+        description: "十八变完整理论"
+      - name: "炁脉调理开窍十八变简明手册.md"
+        tags: [therapy, 18-changes, quick-reference, handbook]
+        description: "十八变简明速查手册"
+      - name: "开窍十八变应对方案系统.md"
+        tags: [therapy, 18-changes, response-system, protocols]
+        description: "十八变应对方案系统"
+      - name: "炁脉调理临床排异现象实录.md"
+        tags: [therapy, paiyi, clinical-records, detox-manifestations]
+        description: "临床排异现象实录"
+      - name: "病种特异排病反应图谱.md"
+        tags: [therapy, disease-specific, paiyi, atlas]
+        description: "病种特异排病反应图谱"
+      - name: "炁脉音乐疗法与食疗体系.md"
+        tags: [therapy, music-therapy, diet-therapy, wuyin]
+        description: "音乐疗法与食疗体系"
+      - name: "五音+主动音乐疗法方案.md"
+        tags: [therapy, music-therapy, wuyin, active-music, adhd]
+        description: "五音+主动音乐疗法方案"
+      - name: "五音疗法音乐库_扩展版.md"
+        tags: [therapy, music-therapy, wuyin, music-library]
+        description: "五音疗法音乐库扩展版"
+      - name: "发酵食物核心方案（肠脑轴重建）.md"
+        tags: [therapy, diet, fermented-food, gut-brain-axis, must-have]
+        description: "发酵食物核心方案"
+      - name: "发酵食物核心知识点（固化版）.md"
+        tags: [therapy, diet, fermented-food, core-knowledge]
+        description: "发酵食物核心知识点"
+      - name: "归经靶向抗肿瘤理论研究档案.md"
+        tags: [therapy, cancer, tumor, gui-jing, research]
+        description: "归经靶向抗肿瘤理论"
+      - name: "癌症J-Q-K高阶治疗方案_泻毒排异法.md"
+        tags: [therapy, cancer, J-Q-K, high-level, detox]
+        description: "癌症J-Q-K高阶治疗方案"
+      - name: "儿童抽动症+ADHD疗效验证指标体系.md"
+        tags: [therapy, adhd, tourette, children, validation]
+        description: "儿童抽动症+ADHD疗效验证"
+      - name: "长周期调理哲学_衰老与逆反.md"
+        tags: [therapy, philosophy, long-term, aging, reverse]
+        description: "长周期调理哲学"
+
+  03-template:
+    description: "输出模板与话术"
+    priority: 4
+    files:
+      - name: "标准病案回复模板.md"
+        tags: [template, case-response, output-format, 6-modules]
+        description: "标准病案回复模板（6大模块）"
+      - name: "儿童抽动症+ADHD沟通话术手册.md"
+        tags: [template, communication, adhd, children, handbook]
+        description: "儿童抽动症沟通话术"
+      - name: "话术标准_60次以上客户回函.md"
+        tags: [template, communication, 60-plus, gratitude, mandatory]
+        description: "60次以上客户话术标准"
+
+  04-emergency:
+    description: "急救方案（紧急调用）"
+    priority: 5
+    files:
+      - name: "内脏激活术_黑桃J级急救法.md"
+        tags: [emergency, first-aid, black-jack, organ-activation]
+        description: "内脏激活术（黑桃J级）"
+      - name: "尿毒症特殊疗法_黑桃K级排毒法.md"
+        tags: [emergency, first-aid, black-king, uremia, detox]
+        description: "尿毒症特殊疗法（黑桃K级）"
+      - name: "通神露泡脚替代方案_作息难调者专用.md"
+        tags: [emergency, alternative, foot-soak, sleep-adjustment]
+        description: "通神露泡脚替代方案"
+
+  05-ai-workflow:
+    description: "AI工作流（自检与流程）"
+    priority: 6
+    files:
+      - name: "Prome输出前自检清单.md"
+        tags: [ai-workflow, checklist, pre-output, mandatory, 5-checks]
+        description: "输出前自检清单（5项必检）"
+      - name: "炁脉诊疗Prome工作流程图.md"
+        tags: [ai-workflow, workflow, process-diagram]
+        description: "诊疗工作流程图"
+      - name: "心性评估与点化话术体系.md"
+        tags: [ai-workflow, mindset-assessment, guidance, three-levels]
+        description: "心性评估与点化话术"
+
+# 快速检索标签
+tag_index:
+  identity: [00-core/灵觉_核心密码.md]
+  mission: [00-core/灵觉_核心密码.md]
+  diagnosis: [01-diagnosis/五维诊断评估标准1-10级_详细版.md]
+  wuwei: [01-diagnosis/五维诊断评估标准1-10级_详细版.md]
+  therapy: [02-therapy/]
+  54-cards: [02-therapy/炁脉医学道统全录·54张牌与十八变贯通体系.md]
+  18-changes: 
+    - 02-therapy/炁脉十八变全集.md
+    - 02-therapy/炁脉调理开窍十八变简明手册.md
+    - 02-therapy/开窍十八变应对方案系统.md
+  paiyi: 
+    - 02-therapy/炁脉调理临床排异现象实录.md
+    - 02-therapy/病种特异排病反应图谱.md
+  music-therapy: 
+    - 02-therapy/炁脉音乐疗法与食疗体系.md
+    - 02-therapy/五音+主动音乐疗法方案.md
+    - 02-therapy/五音疗法音乐库_扩展版.md
+  fermented-food: 
+    - 02-therapy/发酵食物核心方案（肠脑轴重建）.md
+    - 02-therapy/发酵食物核心知识点（固化版）.md
+  cancer: 
+    - 02-therapy/归经靶向抗肿瘤理论研究档案.md
+    - 02-therapy/癌症J-Q-K高阶治疗方案_泻毒排异法.md
+  template: [03-template/]
+  emergency: [04-emergency/]
+  ai-workflow: [05-ai-workflow/]
+  checklist: [05-ai-workflow/Prome输出前自检清单.md]
+
+# 核心原则（强制规则）
+core_principles:
+  - "一个患者一个文件"
+  - "行罐不会耗炁"
+  - "先解释炁脉医学，再谈治疗"
+  - "60次以上客户第一句必感谢"
+  - "不是'我觉得'，是'系统验证过'"
+
+# 调用示例
+usage_examples:
+  new_patient: 
+    - "01-diagnosis/五维诊断评估标准1-10级_详细版.md"
+    - "02-therapy/炁脉医学道统全录·54张牌与十八变贯通体系.md"
+    - "03-template/标准病案回复模板.md"
+  sixty_plus:
+    - "03-template/话术标准_60次以上客户回函.md"
+  emergency:
+    - "04-emergency/"
+  adhd_child:
+    - "02-therapy/儿童抽动症+ADHD疗效验证指标体系.md"
+    - "03-template/儿童抽动症+ADHD沟通话术手册.md"
+  before_output:
+    - "05-ai-workflow/Prome输出前自检清单.md"
+---
+
+# AI调用指南
+
+## 启动时（自动加载）
+1. 读取 00-core/ 下所有文件
+2. 确认身份和使命
+
+## 处理新患者
+1. 加载 01-diagnosis/ 进行五维评估
+2. 加载 02-therapy/54张牌体系 制定方案
+3. 加载 03-template/ 撰写回复
+4. 输出前加载 05-ai-workflow/Prome输出前自检清单.md
+
+## 急救情况
+1. 立即加载 04-emergency/ 对应方案
+
+## 关键词触发
+- "五维" → 01-diagnosis/
+- "54牌" | "十八变" → 02-therapy/相关文件
+- "排异" → 02-therapy/排异实录
+- "音乐" → 02-therapy/音乐疗法
+- "发酵" → 02-therapy/发酵食物
+- "癌症" | "肿瘤" → 02-therapy/癌症方案
+- "60次" → 03-template/60次话术
+- "急救" | "紧急" → 04-emergency/
+- "自检" → 05-ai-workflow/Prome输出前自检清单.md
